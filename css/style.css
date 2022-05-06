@@ -1,0 +1,1380 @@
+@import url("../fonts/NeueHaasUnicaW1G-Regular.woff2");
+@import url("../fonts/TinkoffSans.woff2");
+body {
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  font-family: haas, pragmatica, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
+}
+
+/* HEADER */
+header {
+  background: #f6f7f8;
+}
+
+header .navbar-brand {
+  position: absolute;
+  z-index: 99;
+}
+
+@media (min-width: 320px) {
+  header .navbar-brand img {
+    margin-top: 1em;
+    height: 5em;
+  }
+}
+
+@media (min-width: 460px) {
+  header .navbar-brand img {
+    height: 4em;
+  }
+}
+
+@media (min-width: 678px) {
+  header .navbar-brand img {
+    height: 3em;
+  }
+}
+
+@media (min-width: 992px) {
+  header .navbar-brand img {
+    height: 2em;
+  }
+}
+
+@media (min-width: 320px) {
+  header .navbar .navbar-toggler .navbar-toggler-icon {
+    height: 5em;
+    width: 5em;
+  }
+}
+
+@media (min-width: 460px) {
+  header .navbar .navbar-toggler .navbar-toggler-icon {
+    height: 4em;
+    width: 4em;
+  }
+}
+
+@media (min-width: 678px) {
+  header .navbar .navbar-toggler .navbar-toggler-icon {
+    height: 3em;
+    width: 3em;
+  }
+}
+
+header .navbar .navbar-collapse .header-hr {
+  background: #eaecee;
+  border: none;
+  height: 1px;
+  margin: 0;
+}
+
+header .navbar .navbar-collapse .header-list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0;
+      -ms-flex: 1 0;
+          flex: 1 0;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  overflow: hidden;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+@media (min-width: 320px) {
+  header .navbar .navbar-collapse .header-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 5em 0;
+  }
+}
+
+@media (min-width: 992px) {
+  header .navbar .navbar-collapse .header-list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding: 3em 0;
+  }
+}
+
+header .navbar .navbar-collapse .header-list .header-list-link {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 2rem;
+  position: relative;
+}
+
+header .navbar .navbar-collapse .header-list .header-list-link:last-child {
+  margin-right: -2rem;
+}
+
+@media (min-width: 320px) {
+  header .navbar .navbar-collapse .header-list .header-list-link {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-right: 0;
+  }
+  header .navbar .navbar-collapse .header-list .header-list-link:last-child {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  header .navbar .navbar-collapse .header-list .header-list-link {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin-right: 2rem;
+  }
+  header .navbar .navbar-collapse .header-list .header-list-link:last-child {
+    margin-right: -2rem;
+  }
+}
+
+header .navbar .navbar-collapse .header-list .header-list-link .header-link {
+  color: rgba(0, 0, 0, 0.54);
+  font-family: haas, pragmatica, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  text-decoration: none;
+}
+
+header .navbar .navbar-collapse .header-list .header-list-link .header-link:hover {
+  color: rgba(0, 0, 0, 0.8);
+  text-decoration: none;
+}
+
+@media (min-width: 320px) {
+  header .navbar .navbar-collapse .header-list .header-list-link .header-link {
+    font-size: 2.5em;
+  }
+}
+
+@media (min-width: 992px) {
+  header .navbar .navbar-collapse .header-list .header-list-link .header-link {
+    font-size: 1em;
+  }
+}
+
+header .navbar .navbar-collapse .header-list .header-list-link .active {
+  color: rgba(0, 0, 0, 0.8);
+  -webkit-box-shadow: inset 0 -3px 0 -1px #666;
+          box-shadow: inset 0 -3px 0 -1px #666;
+}
+
+@media (min-width: 992px) {
+  header .navbar .navbar-collapse .btn-header {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+header .navbar .navbar-collapse .btn-header .header-btn {
+  background-color: #ffdd2d;
+  border: 1px solid #ffdd2d;
+  position: relative;
+  -webkit-transition-duration: 0.25s;
+       -o-transition-duration: 0.25s;
+          transition-duration: 0.25s;
+  -webkit-transition-property: background-color, border-color, -webkit-box-shadow;
+  transition-property: background-color, border-color, -webkit-box-shadow;
+  -o-transition-property: background-color, border-color, box-shadow;
+  transition-property: background-color, border-color, box-shadow;
+  transition-property: background-color, border-color, box-shadow, -webkit-box-shadow;
+  -webkit-transition-timing-function: ease;
+       -o-transition-timing-function: ease;
+          transition-timing-function: ease;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+@media (min-width: 320px) {
+  header .navbar .navbar-collapse .btn-header .header-btn {
+    width: 100%;
+    padding: 0.5em 2em;
+    font-size: 2em;
+  }
+}
+
+@media (min-width: 992px) {
+  header .navbar .navbar-collapse .btn-header .header-btn {
+    font-size: 1em;
+  }
+}
+
+/* MAIN */
+main {
+  position: relative;
+}
+
+main .promo {
+  position: relative;
+  background: #f6f7f8;
+}
+
+main .promo .container .container-promo {
+  background: url("../img/bg.png") 100% 100% no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+}
+
+@media (min-width: 320px) {
+  main .promo .container .container-promo {
+    padding: 5em 0 10em;
+    background: url("../img/bg.png") 75% 100% no-repeat;
+  }
+}
+
+@media (min-width: 992px) {
+  main .promo .container .container-promo {
+    padding: 3em 0;
+    background: url("../img/bg.png") 100% 100% no-repeat;
+    -webkit-background-size: contain;
+            background-size: contain;
+  }
+}
+
+main .promo .container .container-promo .promo-text {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+main .promo .container .container-promo .promo-text .promo-title {
+  color: rgba(0, 0, 0, 0.8);
+  font-family: haas, pragmatica, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 3.5em;
+}
+
+@media (min-width: 320px) {
+  main .promo .container .container-promo .promo-text .promo-title {
+    font-size: 4.5em;
+    text-align: center;
+  }
+}
+
+@media (min-width: 460px) {
+  main .promo .container .container-promo .promo-text .promo-title {
+    font-size: 4em;
+  }
+}
+
+@media (min-width: 678px) {
+  main .promo .container .container-promo .promo-text .promo-title {
+    font-size: 3.5em;
+  }
+}
+
+@media (min-width: 768px) {
+  main .promo .container .container-promo .promo-text .promo-title {
+    font-size: 3em;
+  }
+}
+
+@media (min-width: 992px) {
+  main .promo .container .container-promo .promo-text .promo-title {
+    width: 336px;
+    font-size: 2em;
+    text-align: left;
+  }
+}
+
+@media (min-width: 1280px) {
+  main .promo .container .container-promo .promo-text .promo-title {
+    width: 336px;
+    font-size: 2.5em;
+    text-align: left;
+  }
+}
+
+main .promo .container .container-promo .promo-text .promo-list {
+  width: 336px;
+  color: rgba(0, 0, 0, 0.8);
+  font-family: haas, pragmatica, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  margin: 2em 0;
+}
+
+@media (min-width: 320px) {
+  main .promo .container .container-promo .promo-text .promo-list {
+    width: 100%;
+    font-size: 2.5em;
+  }
+}
+
+@media (min-width: 460px) {
+  main .promo .container .container-promo .promo-text .promo-list {
+    font-size: 2em;
+  }
+}
+
+@media (min-width: 678px) {
+  main .promo .container .container-promo .promo-text .promo-list {
+    font-size: 1.8em;
+  }
+}
+
+@media (min-width: 992px) {
+  main .promo .container .container-promo .promo-text .promo-list {
+    width: 336px;
+    font-size: 1em;
+    text-align: left;
+    padding: 0 1em;
+  }
+}
+
+@media (min-width: 1280px) {
+  main .promo .container .container-promo .promo-text .promo-list {
+    width: 336px;
+    font-size: 1em;
+    text-align: left;
+    padding: 0 1em;
+  }
+}
+
+main .promo .container .container-promo .promo-text .promo-list .promo-list-item {
+  color: #ffdd2d;
+}
+
+@media (min-width: 320px) {
+  main .promo .container .container-promo .promo-text .promo-list .promo-list-item {
+    margin: 0.75em 0;
+  }
+}
+
+main .promo .container .container-promo .promo-text .promo-list .promo-list-item span {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+@media (min-width: 320px) {
+  main .promo .container .container-promo .promo-form form input {
+    padding: 0.5em 1em;
+    font-size: 3em;
+  }
+  main .promo .container .container-promo .promo-form form .iti__selected-flag {
+    padding: 0.5em 1em;
+    font-size: 3em;
+  }
+}
+
+@media (min-width: 460px) {
+  main .promo .container .container-promo .promo-form form input {
+    padding: 0.5em 1em;
+    font-size: 2.5em;
+  }
+  main .promo .container .container-promo .promo-form form .iti__selected-flag {
+    padding: 0.5em 1em;
+    font-size: 2.5em;
+  }
+}
+
+@media (min-width: 678px) {
+  main .promo .container .container-promo .promo-form form input {
+    padding: 0.5em 1em;
+    font-size: 2em;
+  }
+  main .promo .container .container-promo .promo-form form .iti__selected-flag {
+    padding: 0.5em 1em;
+    font-size: 2em;
+  }
+}
+
+@media (min-width: 992px) {
+  main .promo .container .container-promo .promo-form form input {
+    padding: 0.5em 1em;
+    font-size: 1em;
+  }
+  main .promo .container .container-promo .promo-form form .iti__selected-flag {
+    padding: 0.5em 1em;
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 1280px) {
+  main .promo .container .container-promo .promo-form form input {
+    font-size: 1em;
+  }
+  main .promo .container .container-promo .promo-form form .iti__selected-flag {
+    font-size: 1em;
+  }
+}
+
+main .promo .container .container-promo .promo-form form .header-hr {
+  background: #eaecee;
+  border: none;
+  height: 1px;
+  margin: 1em 0;
+}
+
+@media (min-width: 992px) {
+  main .promo .container .container-promo .promo-form form .header-hr {
+    margin: 0.5em 0;
+  }
+}
+
+main .promo .container .container-promo .promo-form form button {
+  background-color: #ffdd2d;
+  border: 1px solid #ffdd2d;
+  position: relative;
+  -webkit-transition-duration: 0.25s;
+       -o-transition-duration: 0.25s;
+          transition-duration: 0.25s;
+  -webkit-transition-property: background-color, border-color, -webkit-box-shadow;
+  transition-property: background-color, border-color, -webkit-box-shadow;
+  -o-transition-property: background-color, border-color, box-shadow;
+  transition-property: background-color, border-color, box-shadow;
+  transition-property: background-color, border-color, box-shadow, -webkit-box-shadow;
+  -webkit-transition-timing-function: ease;
+       -o-transition-timing-function: ease;
+          transition-timing-function: ease;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+@media (min-width: 320px) {
+  main .promo .container .container-promo .promo-form form button {
+    padding: 0.75em 2em;
+    font-size: 2.5em;
+  }
+}
+
+@media (min-width: 460px) {
+  main .promo .container .container-promo .promo-form form button {
+    font-size: 2em;
+  }
+}
+
+@media (min-width: 678px) {
+  main .promo .container .container-promo .promo-form form button {
+    font-size: 1.5em;
+  }
+}
+
+@media (min-width: 992px) {
+  main .promo .container .container-promo .promo-form form button {
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 1280px) {
+  main .promo .container .container-promo .promo-form form button {
+    font-size: 1em;
+  }
+}
+
+main .privilege .container .title {
+  color: rgba(0, 0, 0, 0.8);
+  font-family: haas, pragmatica, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
+  font-weight: 400;
+  text-align: center;
+}
+
+@media (min-width: 320px) {
+  main .privilege .container .title {
+    font-size: 3.5em;
+  }
+}
+
+@media (min-width: 460px) {
+  main .privilege .container .title {
+    font-size: 3em;
+  }
+}
+
+@media (min-width: 678px) {
+  main .privilege .container .title {
+    font-size: 2.5em;
+  }
+}
+
+@media (min-width: 992px) {
+  main .privilege .container .title {
+    font-size: 2em;
+  }
+}
+
+main .privilege .container .card-block img {
+  background: #eaecee;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-border-radius: 30%;
+          border-radius: 30%;
+}
+
+@media (min-width: 320px) {
+  main .privilege .container .card-block img {
+    width: 100px;
+    height: 100px;
+    margin-right: 2em;
+  }
+}
+
+@media (min-width: 460px) {
+  main .privilege .container .card-block img {
+    width: 80px;
+    height: 80px;
+    margin-right: 2em;
+  }
+}
+
+@media (min-width: 992px) {
+  main .privilege .container .card-block img {
+    width: 80px;
+    height: 80px;
+    margin-right: 2em;
+  }
+}
+
+@media (min-width: 1280px) {
+  main .privilege .container .card-block img {
+    width: 64px;
+    height: 64px;
+    margin-right: 1em;
+  }
+}
+
+main .privilege .container .card-block .card-title {
+  color: rgba(0, 0, 0, 0.8);
+  font-family: haas, pragmatica, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
+  font-weight: 500;
+}
+
+main .privilege .container .card-block .card-title:hover {
+  text-decoration: none;
+}
+
+@media (min-width: 320px) {
+  main .privilege .container .card-block .card-title {
+    font-size: 2.5em;
+  }
+}
+
+@media (min-width: 460px) {
+  main .privilege .container .card-block .card-title {
+    font-size: 2em;
+  }
+}
+
+@media (min-width: 678px) {
+  main .privilege .container .card-block .card-title {
+    font-size: 1.5em;
+  }
+}
+
+@media (min-width: 992px) {
+  main .privilege .container .card-block .card-title {
+    font-size: 1.5em;
+  }
+}
+
+main .privilege .container .card-block .card-text {
+  color: rgba(0, 0, 0, 0.8);
+  font-family: haas, pragmatica, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
+  font-weight: 400;
+}
+
+@media (min-width: 320px) {
+  main .privilege .container .card-block .card-text {
+    font-size: 2em;
+  }
+}
+
+@media (min-width: 460px) {
+  main .privilege .container .card-block .card-text {
+    font-size: 1.5em;
+  }
+}
+
+@media (min-width: 678px) {
+  main .privilege .container .card-block .card-text {
+    font-size: 1.5em;
+  }
+}
+
+@media (min-width: 992px) {
+  main .privilege .container .card-block .card-text {
+    font-size: 1em;
+  }
+}
+
+main .privilege .container .card-block .card-text a:hover {
+  text-decoration: none;
+}
+
+main .solutions .container .title {
+  color: rgba(0, 0, 0, 0.8);
+  font-family: haas, pragmatica, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
+  font-weight: 400;
+  text-align: center;
+}
+
+@media (min-width: 320px) {
+  main .solutions .container .title {
+    font-size: 3.5em;
+  }
+}
+
+@media (min-width: 460px) {
+  main .solutions .container .title {
+    font-size: 3em;
+  }
+}
+
+@media (min-width: 678px) {
+  main .solutions .container .title {
+    font-size: 2.5em;
+  }
+}
+
+@media (min-width: 992px) {
+  main .solutions .container .title {
+    font-size: 2em;
+  }
+}
+
+main .solutions .container div .card img {
+  background: #f6f7f8;
+}
+
+main .solutions .container div .card .card-body .card-title {
+  color: rgba(0, 0, 0, 0.8);
+  font-family: haas, pragmatica, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
+  font-weight: 500;
+}
+
+main .solutions .container div .card .card-body .card-title a {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+main .solutions .container div .card .card-body .card-title a:hover {
+  text-decoration: none;
+}
+
+@media (min-width: 320px) {
+  main .solutions .container div .card .card-body .card-title {
+    font-size: 2.5em;
+  }
+}
+
+@media (min-width: 678px) {
+  main .solutions .container div .card .card-body .card-title {
+    font-size: 2em;
+  }
+}
+
+@media (min-width: 992px) {
+  main .solutions .container div .card .card-body .card-title {
+    font-size: 1.2em;
+  }
+}
+
+@media (min-width: 1280px) {
+  main .solutions .container div .card .card-body .card-title {
+    font-size: 1.5em;
+  }
+}
+
+main .solutions .container div .card .card-body .card-text {
+  color: rgba(0, 0, 0, 0.8);
+  font-family: haas, pragmatica, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
+  font-weight: 400;
+}
+
+@media (min-width: 320px) {
+  main .solutions .container div .card .card-body .card-text {
+    font-size: 2em;
+  }
+}
+
+@media (min-width: 678px) {
+  main .solutions .container div .card .card-body .card-text {
+    font-size: 1.5em;
+  }
+}
+
+@media (min-width: 992px) {
+  main .solutions .container div .card .card-body .card-text {
+    font-size: 0.85em;
+  }
+}
+
+@media (min-width: 1280px) {
+  main .solutions .container div .card .card-body .card-text {
+    font-size: 1em;
+  }
+}
+
+main .solutions .container div .card .card-body .btn {
+  color: rgba(0, 0, 0, 0.8);
+  font-family: haas, pragmatica, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+}
+
+@media (min-width: 320px) {
+  main .solutions .container div .card .card-body .btn {
+    width: 100%;
+    font-size: 2em;
+  }
+}
+
+@media (min-width: 678px) {
+  main .solutions .container div .card .card-body .btn {
+    font-size: 1.5em;
+  }
+}
+
+@media (min-width: 992px) {
+  main .solutions .container div .card .card-body .btn {
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 1280px) {
+  main .solutions .container div .card .card-body .btn {
+    width: auto;
+    font-size: 1em;
+  }
+}
+
+main .instruments .container .title {
+  color: rgba(0, 0, 0, 0.8);
+  font-family: haas, pragmatica, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 2.5em;
+  text-align: center;
+}
+
+@media (min-width: 320px) {
+  main .instruments .container .title {
+    font-size: 3.5em;
+  }
+}
+
+@media (min-width: 460px) {
+  main .instruments .container .title {
+    font-size: 3em;
+  }
+}
+
+@media (min-width: 678px) {
+  main .instruments .container .title {
+    font-size: 2.5em;
+  }
+}
+
+@media (min-width: 992px) {
+  main .instruments .container .title {
+    font-size: 2em;
+  }
+}
+
+main .instruments .container .card {
+  background: #f6f7f8;
+  border: none;
+}
+
+main .instruments .container .card .card-body .card-title {
+  color: rgba(0, 0, 0, 0.8);
+  font-family: haas, pragmatica, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.5em;
+}
+
+@media (min-width: 320px) {
+  main .instruments .container .card .card-body .card-title {
+    font-size: 2.5em;
+  }
+}
+
+@media (min-width: 678px) {
+  main .instruments .container .card .card-body .card-title {
+    font-size: 2em;
+  }
+}
+
+@media (min-width: 992px) {
+  main .instruments .container .card .card-body .card-title {
+    font-size: 1.5em;
+  }
+}
+
+@media (min-width: 1280px) {
+  main .instruments .container .card .card-body .card-title {
+    font-size: 1.5em;
+  }
+}
+
+main .instruments .container .card .card-body .card-title a {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+main .instruments .container .card .card-body .card-title a:hover {
+  text-decoration: none;
+}
+
+main .instruments .container .card .card-body .card-text {
+  color: rgba(0, 0, 0, 0.8);
+  font-family: haas, pragmatica, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+}
+
+@media (min-width: 320px) {
+  main .instruments .container .card .card-body .card-text {
+    font-size: 2em;
+  }
+}
+
+@media (min-width: 678px) {
+  main .instruments .container .card .card-body .card-text {
+    font-size: 1.5em;
+  }
+}
+
+@media (min-width: 992px) {
+  main .instruments .container .card .card-body .card-text {
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 1280px) {
+  main .instruments .container .card .card-body .card-text {
+    font-size: 1em;
+  }
+}
+
+main .instruments .container .card .card-body .card-text a {
+  font-size: 1em;
+}
+
+main .instruments .container .card .card-body .card-text a:hover {
+  text-decoration: none;
+}
+
+main .instruments .container .card .card-body .card-link {
+  color: #336fee;
+  font-family: haas, pragmatica, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+}
+
+@media (min-width: 320px) {
+  main .instruments .container .card .card-body .card-link {
+    width: 100%;
+    font-size: 2em;
+  }
+}
+
+@media (min-width: 678px) {
+  main .instruments .container .card .card-body .card-link {
+    font-size: 1.5em;
+  }
+}
+
+@media (min-width: 992px) {
+  main .instruments .container .card .card-body .card-link {
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 1280px) {
+  main .instruments .container .card .card-body .card-link {
+    width: auto;
+    font-size: 1em;
+  }
+}
+
+main .instruments .container .card img {
+  float: right;
+}
+
+@media (min-width: 320px) {
+  main .instruments .container .card img {
+    width: 100%;
+  }
+}
+
+main .check .container .title {
+  color: rgba(0, 0, 0, 0.8);
+  font-family: haas, pragmatica, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
+  font-weight: 400;
+  text-align: center;
+}
+
+@media (min-width: 320px) {
+  main .check .container .title {
+    font-size: 3.5em;
+  }
+}
+
+@media (min-width: 460px) {
+  main .check .container .title {
+    font-size: 3em;
+  }
+}
+
+@media (min-width: 678px) {
+  main .check .container .title {
+    font-size: 2.5em;
+  }
+}
+
+@media (min-width: 992px) {
+  main .check .container .title {
+    font-size: 2em;
+  }
+}
+
+@media (min-width: 320px) {
+  main .check .container .check-numb {
+    margin: 3em auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+main .check .container .check-numb .check-title {
+  background: #eaecee;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-border-radius: 30%;
+          border-radius: 30%;
+}
+
+@media (min-width: 320px) {
+  main .check .container .check-numb .check-title {
+    width: 100px;
+    height: 100px;
+    margin-right: 2em;
+  }
+}
+
+@media (min-width: 992px) {
+  main .check .container .check-numb .check-title {
+    width: 64px;
+    height: 64px;
+    margin-right: 1em;
+  }
+}
+
+main .check .container .check-numb .check-title .numb {
+  color: rgba(0, 0, 0, 0.8);
+  font-family: haas, pragmatica, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
+  font-weight: 500;
+}
+
+@media (min-width: 320px) {
+  main .check .container .check-numb .check-title .numb {
+    font-size: 2.5em;
+  }
+}
+
+@media (min-width: 678px) {
+  main .check .container .check-numb .check-title .numb {
+    font-size: 2em;
+  }
+}
+
+@media (min-width: 992px) {
+  main .check .container .check-numb .check-title .numb {
+    font-size: 1.5em;
+  }
+}
+
+@media (min-width: 320px) {
+  main .check .container .check-numb .check-desc {
+    padding: 2em 2em 0;
+  }
+}
+
+@media (min-width: 678px) {
+  main .check .container .check-numb .check-desc {
+    padding: 2em 1em 0;
+  }
+}
+
+main .check .container .check-numb .check-desc h3 {
+  color: rgba(0, 0, 0, 0.8);
+  font-family: haas, pragmatica, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
+  font-weight: 500;
+  text-align: center;
+}
+
+@media (min-width: 320px) {
+  main .check .container .check-numb .check-desc h3 {
+    font-size: 2.5em;
+  }
+}
+
+@media (min-width: 678px) {
+  main .check .container .check-numb .check-desc h3 {
+    font-size: 2em;
+  }
+}
+
+@media (min-width: 992px) {
+  main .check .container .check-numb .check-desc h3 {
+    font-size: 1.5em;
+  }
+}
+
+@media (min-width: 1280px) {
+  main .check .container .check-numb .check-desc h3 {
+    font-size: 1.5em;
+  }
+}
+
+main .check .container .check-numb .check-desc p {
+  color: rgba(0, 0, 0, 0.8);
+  font-family: haas, pragmatica, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
+  font-weight: 400;
+  text-align: center;
+}
+
+@media (min-width: 320px) {
+  main .check .container .check-numb .check-desc p {
+    font-size: 2em;
+  }
+}
+
+@media (min-width: 678px) {
+  main .check .container .check-numb .check-desc p {
+    font-size: 1.5em;
+  }
+}
+
+@media (min-width: 992px) {
+  main .check .container .check-numb .check-desc p {
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 1280px) {
+  main .check .container .check-numb .check-desc p {
+    font-size: 1em;
+  }
+}
+
+main .info {
+  background: #f6f7f8;
+}
+
+@media (min-width: 320px) {
+  main .info .container .info-form form input {
+    padding: 0.5em 1em;
+    font-size: 3em;
+  }
+  main .info .container .info-form form .iti__selected-flag {
+    padding: 0.5em 1em;
+    font-size: 3em;
+  }
+}
+
+@media (min-width: 460px) {
+  main .info .container .info-form form input {
+    padding: 0.5em 1em;
+    font-size: 2.5em;
+  }
+  main .info .container .info-form form .iti__selected-flag {
+    padding: 0.5em 1em;
+    font-size: 2.5em;
+  }
+}
+
+@media (min-width: 678px) {
+  main .info .container .info-form form input {
+    padding: 0.5em 1em;
+    font-size: 2em;
+  }
+  main .info .container .info-form form .iti__selected-flag {
+    padding: 0.5em 1em;
+    font-size: 2em;
+  }
+}
+
+@media (min-width: 992px) {
+  main .info .container .info-form form {
+    width: 50%;
+    margin: 0 auto;
+  }
+  main .info .container .info-form form input {
+    padding: 0.5em 1em;
+    font-size: 1em;
+  }
+  main .info .container .info-form form .iti__selected-flag {
+    padding: 0.5em 1em;
+    font-size: 1em;
+  }
+}
+
+main .info .container .info-form form .header-hr {
+  background: #eaecee;
+  border: none;
+  height: 1px;
+  margin: 1em 0;
+}
+
+@media (min-width: 992px) {
+  main .info .container .info-form form .header-hr {
+    margin: 0.5em 0;
+  }
+}
+
+main .info .container .info-form form button {
+  background-color: #ffdd2d;
+  border: 1px solid #ffdd2d;
+  position: relative;
+  -webkit-transition-duration: 0.25s;
+       -o-transition-duration: 0.25s;
+          transition-duration: 0.25s;
+  -webkit-transition-property: background-color, border-color, -webkit-box-shadow;
+  transition-property: background-color, border-color, -webkit-box-shadow;
+  -o-transition-property: background-color, border-color, box-shadow;
+  transition-property: background-color, border-color, box-shadow;
+  transition-property: background-color, border-color, box-shadow, -webkit-box-shadow;
+  -webkit-transition-timing-function: ease;
+       -o-transition-timing-function: ease;
+          transition-timing-function: ease;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+@media (min-width: 320px) {
+  main .info .container .info-form form button {
+    padding: 0.75em 2em;
+    font-size: 2.5em;
+  }
+}
+
+@media (min-width: 460px) {
+  main .info .container .info-form form button {
+    font-size: 2em;
+  }
+}
+
+@media (min-width: 678px) {
+  main .info .container .info-form form button {
+    font-size: 1.5em;
+  }
+}
+
+@media (min-width: 992px) {
+  main .info .container .info-form form button {
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 1280px) {
+  main .info .container .info-form form button {
+    font-size: 1em;
+  }
+}
+
+/* FOOTER */
+footer {
+  background-color: #f6f7f8;
+}
+
+footer .footer-block .footer-title {
+  color: rgba(0, 0, 0, 0.54);
+  font-family: haas, pragmatica, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+@media (min-width: 320px) {
+  footer .footer-block .footer-title {
+    font-size: 1.5em;
+  }
+}
+
+@media (min-width: 992px) {
+  footer .footer-block .footer-title {
+    font-size: 1em;
+  }
+}
+
+footer .footer-block .footer-title-link {
+  color: rgba(0, 0, 0, 0.54);
+  font-family: haas, pragmatica, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+@media (min-width: 320px) {
+  footer .footer-block .footer-title-link {
+    font-size: 1.5em;
+  }
+}
+
+@media (min-width: 992px) {
+  footer .footer-block .footer-title-link {
+    font-size: 1em;
+    text-align: left;
+  }
+}
+
+footer .footer-block .footer-title-link:hover {
+  color: rgba(0, 0, 0, 0.8);
+  text-decoration: none;
+}
+
+@media (min-width: 320px) {
+  footer .footer-block ul {
+    text-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (min-width: 992px) {
+  footer .footer-block ul {
+    text-align: left;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+footer .footer-block ul .footer-link {
+  color: rgba(0, 0, 0, 0.54);
+  font-family: haas, pragmatica, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+footer .footer-block ul .footer-link:hover {
+  color: rgba(0, 0, 0, 0.8);
+  text-decoration: none;
+}
+
+footer .footer-block ul .footer-link:focus {
+  background-color: rgba(250, 182, 25, 0.12);
+}
+
+@media (min-width: 320px) {
+  footer .footer-block ul .footer-link {
+    font-size: 1.5em;
+  }
+}
+
+@media (min-width: 992px) {
+  footer .footer-block ul .footer-link {
+    font-size: 1em;
+  }
+}
+
+footer .footer-text {
+  color: rgba(0, 0, 0, 0.54);
+  font-family: haas, pragmatica, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
+  font-weight: 400;
+}
+
+@media (min-width: 320px) {
+  footer .footer-text {
+    font-size: 1.2em;
+  }
+}
+
+@media (min-width: 992px) {
+  footer .footer-text {
+    font-size: 1em;
+  }
+}
+
+footer .copyright {
+  color: rgba(0, 0, 0, 0.54);
+  font-family: haas, pragmatica, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
+  font-weight: 400;
+}
+
+@media (min-width: 320px) {
+  footer .copyright {
+    font-size: 1.2em;
+    text-align: center;
+  }
+}
+
+@media (min-width: 992px) {
+  footer .copyright {
+    font-size: 1em;
+    text-align: left;
+  }
+}
